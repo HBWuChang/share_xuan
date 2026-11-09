@@ -57,6 +57,10 @@ Apps → + → New App：
 
 ## 准备提交前
 
-还需要正式图标/截图、隐私政策链接、App Privacy 声明、年龄分级、出口合规问卷，以及真实设备上的传输测试。隐私说明应描述局域网文件传输、共享目录及旧协议未加密的事实；若后续加入分析 SDK、云服务或新权限，需要重新评估。
+已配置 Wi-Fi 版 AppIcon 并采集 iPhone Air 截图；仍需 iPad 截图（如保留 iPad 支持）、隐私政策链接、App Privacy 声明、年龄分级、出口合规问卷，以及真实设备上的传输测试。隐私说明应描述局域网文件传输、共享目录及旧协议未加密的事实；若后续加入分析 SDK、云服务或新权限，需要重新评估。
 
 当前工程未替你填写这些声明或提交审核。正式 Archive/上传前需复核 privacy manifest、依赖、ATS 兼容配置和签名；不应把本次 Debug 构建视作已可直接发布的正式包。
+
+## GitHub Actions 自动上传
+
+自动签名的本地真机开发与 CI 的手动分发签名是两条独立路径。CI 还需 Distribution `.p12`、两个 App Store Connect 分发 profiles、上传 API Key。详细准备步骤和 Secrets 名称见 [TestFlight CI](TESTFLIGHT_CI.md)。

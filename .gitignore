@@ -5,3 +5,13 @@ DerivedData/
 *.xcuserstate
 xcuserdata/
 .swiftpm/
+# Signing material must only live in GitHub Secrets / runner temp.
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+*.xcarchive/
+*.ipa
+.env
+.env.*
+__pycache__/

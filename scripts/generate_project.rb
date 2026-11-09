@@ -21,7 +21,7 @@ extension = project.new_target(:app_extension, 'ShareExtension', :ios, '16.0')
   end
 end
 app.build_configurations.each do |build|
-  build.build_settings.merge!({'PRODUCT_BUNDLE_IDENTIFIER' => '$(APP_BUNDLE_IDENTIFIER)', 'INFOPLIST_FILE' => 'App/Info.plist', 'CODE_SIGN_ENTITLEMENTS' => 'App/App.entitlements'})
+  build.build_settings.merge!({'PRODUCT_BUNDLE_IDENTIFIER' => '$(APP_BUNDLE_IDENTIFIER)', 'INFOPLIST_FILE' => 'App/Info.plist', 'CODE_SIGN_ENTITLEMENTS' => 'App/App.entitlements', 'ASSETCATALOG_COMPILER_APPICON_NAME' => 'AppIcon'})
 end
 extension.build_configurations.each do |build|
   build.build_settings.merge!({'PRODUCT_BUNDLE_IDENTIFIER' => '$(SHARE_BUNDLE_IDENTIFIER)', 'INFOPLIST_FILE' => 'ShareExtension/Info.plist', 'CODE_SIGN_ENTITLEMENTS' => 'ShareExtension/ShareExtension.entitlements', 'APPLICATION_EXTENSION_API_ONLY' => 'YES', 'SKIP_INSTALL' => 'YES'})
@@ -31,6 +31,7 @@ end
   Dir.glob(File.join(root, directory, '*')).sort.each do |file|
     ref = group.new_file(File.basename(file))
     targets.each { |target| target.source_build_phase.add_file_reference(ref) } if file.end_with?('.swift')
+    targets.each { |target| target.resources_build_phase.add_file_reference(ref) } if file.end_with?('.xcassets')
   end
 end
 package = project.new(Xcodeproj::Project::Object::XCLocalSwiftPackageReference)

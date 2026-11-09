@@ -69,3 +69,11 @@ dart --packages=../listen1_xuan/.dart_tool/package_config.json scripts/interop_t
 互操作脚本使用临时目录和随机端口，启动原生测试端与 Dart 测试端，验证 WS、文本、心跳、文件/图片、Unicode 文件名及二进制内容。不会连接实际用户设备。
 
 详细当前验证结果见 [验证记录](docs/VALIDATION.md)。
+
+## GitHub CI / TestFlight
+
+已提供普通 CI 和默认分支手动触发的 TestFlight 发布流程。签名材料放在 GitHub 的 `testflight` Environment 中，不进入仓库。需要准备的 7 个 Secrets、Team ID 变量及首次上传前的图标/隐私事项见 [TestFlight CI 配置](docs/TESTFLIGHT_CI.md)。发布流程尚未用真实凭据远程执行。
+
+## 图标与截图
+
+AppIcon 已配置为 Listen1 人物图标的 Wi-Fi 版本，详见 [图标来源与编辑记录](assets/branding/README.md)。[iPhone Air 截图预览](assets/screenshots/README.md) 包含连接、发送、收件箱和系统分享扩展四个真实页面，以及原始 PNG / 可上传 JPEG。

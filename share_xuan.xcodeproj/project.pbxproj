@@ -14,6 +14,7 @@
 		6A9BA4A0A80CE862390E2447 /* Discovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC61657E95C4BE2C752196D /* Discovery.swift */; };
 		6B93854D0D9650E8587B41D1 /* TransferCore in Frameworks */ = {isa = PBXBuildFile; productRef = 10D1FFD8E19A1EEEE6691ECD /* TransferCore */; };
 		9E0017BC63A8AD5CED49F699 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9CEEBC251B93F45959E07 /* SharedStore.swift */; };
+		C8DFC0537351B7EEC5B691EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75A6999CF78C1284567FD86 /* Assets.xcassets */; };
 		E886BBDC61EA8599E6F8DE5D /* ShareXuanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4802034546D45984C5EAD9 /* ShareXuanApp.swift */; };
 		F20CC2ED7A3E899A2929C4C4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A099B7756F2CCE28DD40491 /* ShareViewController.swift */; };
 		FCB01061E3C878395076484C /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F9CEEBC251B93F45959E07 /* SharedStore.swift */; };
@@ -52,6 +53,7 @@
 		A2F339141A03D1A7210534FA /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		AFD851E7FD318DBF9B05B866 /* ShareExtension.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		B4A0D090C01BDFFA1C5C583D /* Config.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		B75A6999CF78C1284567FD86 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEEEC920F2600B83C9EDF30 /* App.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		C4864585B51B127F036E93CF /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FC07E87FB61F00993764C /* share_xuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share_xuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				FFC61657E95C4BE2C752196D /* Discovery.swift */,
 				4CE1D857BEE49E61A1BB3E24 /* Info.plist */,
 				9A4802034546D45984C5EAD9 /* ShareXuanApp.swift */,
+				B75A6999CF78C1284567FD86 /* Assets.xcassets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DFC0537351B7EEC5B691EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
