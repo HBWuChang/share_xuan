@@ -1,0 +1,9 @@
+title: share_xuan
+description: share_xuan 隐私政策 / Privacy Policy
+theme: jekyll-theme-primer
+
+# 站内不需要发布的内部文档
+exclude:
+  - APPLE_SETUP.md
+  - TESTFLIGHT_CI.md
+  - VALIDATION.md
